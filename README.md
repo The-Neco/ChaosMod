@@ -20,7 +20,7 @@ A list of convars can be found below:
 
 |        Convar       | Default Value |                 Description                  |  Server/Client  |
 |:-------------------:|:-------------:|:--------------------------------------------:|:---------------:|
-| chaosmod_eventtimer |    30000      |    Number of miliseconds between events.     |       Both      |
+| chaosmod_eventtimer |    30000      |    Number of milliseconds between events.     |       Both      |
 |   chaosmod_debug    |    false      | Toggles debug mode (enables console prints). |       Both      |
 
 # Bug reports/suggestions
