@@ -20,8 +20,11 @@ A list of convars can be found below:
 
 |        Convar       | Default Value |                 Description                  |  Server/Client  |
 |:-------------------:|:-------------:|:--------------------------------------------:|:---------------:|
-| chaosmod_eventtimer |    30000      |    Number of milliseconds between events.     |       Both      |
+| chaosmod_eventtimer |    30000      |    Number of milliseconds between events.    |       Both      |
 |   chaosmod_debug    |    false      | Toggles debug mode (enables console prints). |       Both      |
+
+Example of adding a convar into your `server.cfg`
+`setr chaosmod_eventtimer 60000`
 
 # Bug reports/suggestions
 If you find any bugs or have any sugestions to add to the resource please add them to the forum post on the fivem forums or submit a feature request using the [issues](https://github.com/The-Neco/ChaosMod/issues) section of github.
