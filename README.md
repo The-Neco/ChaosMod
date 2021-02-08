@@ -7,14 +7,22 @@ How Do I install ChaosMod on my server?
 
 It's pretty simple
 
-1. Download the latest ChaosMod from the [releases](https://github.com/The-Neco/ChaosMod/releases/latest) section of this repo.
-2. Drag the `ChaosMod` folder to the resources folder in your server.
-3. Add `ensure ChaosMod` to your `server.cfg`.
-4. Start your server and enjoy!
+Using TXAdmin
+  1. In the deployment section of your TXAdmin setup click "Remote URL Template"
+  2. Paste `https://raw.githubusercontent.com/The-Neco/ChaosMod/master/recipe.ymal` in the URL field
+  3. Complete the rest of the server wizzard.
+  4. Start your server and enjoy!
+
+Not using TXAdmin
+
+  1. Download the latest ChaosMod from the [releases](https://github.com/The-Neco/ChaosMod/releases/latest) section of this repo.
+  2. Drag the `ChaosMod` folder to the resources folder in your server.
+  3. Add `ensure ChaosMod` to your `server.cfg`.
+  4. Start your server and enjoy!
 
 Server Configuration
 =
-Configuration for this resource is mainly done via convars. 
+Configuration for this resource is mainly done via convars.
 
 A list of convars can be found below:
 
