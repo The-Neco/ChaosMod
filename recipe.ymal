@@ -1,0 +1,25 @@
+$onesync: on
+name: ChaosMod
+author: TheNeco
+version: 1.0.0
+
+variables: 
+  chaosmod_debug: false
+  chaosmod_eventtimer: 30000
+
+tasks: 
+  # Download default CFX resources
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    subpath: resources
+    dest: ./resources
+
+  # Download ChaosMod resource
+  - action: download_github
+    src: https://github.com/The-Neco/ChaosMod
+    dest: ./resources/ChaosMod
+    
+  # Download default server.cfg
+  - action: download_file
+    url: https://raw.githubusercontent.com/The-Neco/ChaosMod/master/server.cfg
+    path: ./server.cfg
