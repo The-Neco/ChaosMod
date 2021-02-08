@@ -2,6 +2,7 @@ local RecentlyUsed = {}
 
 Citizen.CreateThread(function()
   while true do
+    SetConvarReplicated("chaosmod_eventtimer", GetConvarInt("chaosmod_eventtimer", 30000))
     Citizen.Wait(GetConvarInt("chaosmod_eventtimer", 30000))
     math.randomseed(os.clock())
     local NextEvent = math.random(1, #ChaosMod.ModuleList)

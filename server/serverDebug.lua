@@ -1,4 +1,5 @@
 function DebugPrint(...)
+  SetConvarReplicated("chaosmod_debug", GetConvar("chaosmod_debug", "false"))
   if GetConvar("chaosmod_debug", "false") == "true" then
     local args = {...}
     local message = table.concat(args, "   ")
