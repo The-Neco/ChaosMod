@@ -1,0 +1,7 @@
+Citizen.CreateThread(function()
+  ChaosMod.Modules.new("playerHealAndArmour", "Health + Armour", "Gives the player full health and armour.", function()
+    local MyPed = PlayerPedId()
+    SetEntityHealth(MyPed, GetEntityMaxHealth(MyPed))
+    SetPedArmour(MyPed, 200)
+  end)
+end)
