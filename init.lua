@@ -28,6 +28,7 @@ end
 
 function ChaosMod.Modules:Start()
   DebugPrint(string.format("%s has been triggered.", self.ID))
+  TriggerClientEvent('chat:addMessage', -1, {args = {"^5[^1ChaosMod^5]", string.format("%s - %s.", self.Name, self.Description)}})
   if self.ClientFunction then
     TriggerClientEvent(self.Event, -1)
   end
