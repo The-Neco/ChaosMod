@@ -1,0 +1,8 @@
+Citizen.CreateThread(function()
+  ChaosMod.Modules.new("miscIntenseMusic", "Intense Music", "Starts intense music.", function()
+    TriggerMusicEvent("AW_LOBBY_MUSIC_START")
+    Citizen.Wait(GetConvarInt("chaosmod_eventtimer", 30000))
+    TriggerMusicEvent("MP_MC_CMH_IAA_FINALE_START")
+    SetSeethrough(false)
+  end, nil)
+end)

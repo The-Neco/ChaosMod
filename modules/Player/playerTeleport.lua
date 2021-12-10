@@ -4,9 +4,9 @@ Citizen.CreateThread(function()
       local MyPed = GetPlayerPed(PlayerID)
       local MyVeh = GetVehiclePedIsIn(MyPed, false)
       if MyVeh ~= 0 then
-        SetEntityCoords(MyVeh, -1388.6, -3111.61, 13.94)
+        SetEntityCoords(MyVeh, -1388.6 + math.random(-10, 10), -3111.61 + math.random(-10, 10), 13.94)
       else
-        SetEntityCoords(MyPed, -1388.6, -3111.61, 13.94)
+        SetEntityCoords(MyPed, -1388.6 + math.random(-10, 10), -3111.61 + math.random(-10, 10), 13.94)
       end
       Citizen.Wait(200)
     end
@@ -56,9 +56,9 @@ Citizen.CreateThread(function()
       local MyPed = GetPlayerPed(PlayerID)
       local MyVeh = GetVehiclePedIsIn(MyPed, false)
       if MyVeh ~= 0 then
-        SetEntityCoords(MyVeh, 935.0, 3800.0, 2300.0)
+        SetEntityCoords(MyVeh, 935.0 + math.random(-10, 10), 3800.0 + math.random(-10, 10), 2300.0)
       else
-        SetEntityCoords(MyPed, 935.0, 3800.0, 2300.0)
+        SetEntityCoords(MyPed, 935.0 + math.random(-10, 10), 3800.0 + math.random(-10, 10), 2300.0)
       end
       Citizen.Wait(200)
     end

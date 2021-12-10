@@ -1,0 +1,7 @@
+Citizen.CreateThread(function()
+  ChaosMod.Modules.new("miscNightVision", "Night Vision", "Gives the player night vision.", function()
+    SetNightvision(true)
+    Citizen.Wait(GetConvarInt("chaosmod_eventtimer", 30000))
+    SetNightvision(false)
+  end, nil)
+end)

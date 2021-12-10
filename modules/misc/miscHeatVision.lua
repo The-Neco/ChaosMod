@@ -1,0 +1,7 @@
+Citizen.CreateThread(function()
+  ChaosMod.Modules.new("miscHeatVision", "Heat Vision", "Gives the player heat seaking vision.", function()
+    SetSeethrough(true)
+    Citizen.Wait(GetConvarInt("chaosmod_eventtimer", 30000))
+    SetSeethrough(false)
+  end, nil)
+end)
