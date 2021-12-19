@@ -8,7 +8,6 @@ Citizen.CreateThread(function()
     else
       local playerVel = GetEntityVelocity(MyPed)
       SetPedToRagdoll(MyPed, 10000, 10000, 0, true, true, false)
-      Citizen.Wait(0)
       SetEntityVelocity(MyPed, playerVel.x, playerVel.y, 100.0)
     end
   end, nil)
